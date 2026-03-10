@@ -1,0 +1,390 @@
+
+let add = 25 
+add1 = 25
+
+console.log("addition ", add+add1);
+
+let sub = 10
+sub1 = 10
+console.log("subtraction ", sub - sub1)
+
+let mul = 25
+mul1 = 4
+console.log("multiplication" , mul * mul1)
+
+let div = 25
+div1 = 4
+console.log("division " , div / div1)
+
+let mod = 100
+ mod1 = 30
+console.log ("modulus ", mod % mod1)
+
+let exp = 7
+exp1 = 2
+console.log ("exponential value " , exp ** exp1 )
+
+let exp3 = 2
+exp4 = 5
+console.log("exponential value 2 " , exp3 ** exp4) 
+
+let no = 50
+no1 = 5
+console.log("do divided by 5 is ", no / no1 )
+
+let rem = 45
+rem1 = 6
+console.log ("remainder of 45 is" , rem % rem1)
+
+let mult = 0.5
+mult1 = 8
+console.log("multiplication of 0.5*8 is ", mult * mult1)
+
+let subt = 200
+subt1 = 75
+console.log(" subtraction of 200 - 75 is " , subt - subt1)
+
+let addit = 10
+addi2 = 20
+addi3 = 30
+console.log("addition of three no is", addit + addi2 + addi3)
+
+let modu1 = 9
+modu2 = 2
+console.log("modulus of 9 and 2 is", modu1 % modu2)
+
+
+ 
+//section 2 = Increment / Decrement
+
+console.clear();
+
+let a = 5
+
+console.log(a++)
+console.log(a)
+
+// output - 5 , 6
+
+let a1 = 5
+console.log(++a1)
+console.log(a1)
+
+// output - 6,6
+
+let a2 = 10
+let b2 = ++a2
+console.log(a2, b2)
+
+//output - 11, 11
+
+let a3 = 1
+let b3 = a3++ + a3++
+console.log(a3, b3)
+
+//output - 3, 3
+
+let a4 = 1
+let b4 = ++a4 + ++a4
+console.log(a4, b4)
+
+//output - 3, 5
+
+let a5 = 3
+a5 = ++a5
+console.log(a5)
+
+//output - 4
+
+let x = 5
+let y = --x
+console.log(x, y)
+
+//output = 4, 4
+
+let x1 = 5
+let y1 = x1--
+console.log(x1, y1)
+
+//output - 5, 5
+
+let a6 = 2
+let b6 = a6++ + ++a6 + a6++
+console.log(a6, b6)
+
+//output - 5, 10
+
+let a7 = 4
+let b7 = --a7 + a7-- + --a7
+console.log(a7, b7)
+
+//output - 1, 7
+
+let a8 = 1
+let b8 = ++a8 + a8++ + ++a8
+console.log(a8, b8)
+
+//output - 4, 8
+
+let a9 = 5
+let b9 = a9++ + a9++ + a9++
+console.log(a9, b9)
+
+//output - 8, 18
+
+let a10 = 10
+a10 += a10++
+console.log(a10)
+
+//output - 20
+
+//section 3
+
+let ab= 10
+let bc = 5
+
+console.log(ab += bc)
+
+//output - 15
+
+
+aa=20
+bb=8
+
+console.log(aa-=bb)
+
+//output - 12
+
+cc=7
+cd =3
+console.log(cc*=cd)
+
+//output - 21
+
+ce=40
+cf = 5
+console.log(ce/=cf)
+
+//output - 8
+
+cg = 25
+ch = 4
+console.log(cg%=ch)
+
+//output - 1
+
+let af = 5
+af += 3
+af *= 2
+console.log(af)
+
+//output - 16
+
+let ag = 10
+ag -= 2
+ag /= 4
+console.log(ag)
+
+//output - 2
+
+let ah = 8
+ah %= 3
+console.log(ah)
+
+//output = 2
+
+let ai = 6
+ai += ai
+console.log(ai)
+
+//output = 12
+
+let aj = 2
+aj *= aj += 3
+console.log(aj)
+
+//output = 10
+
+
+// section 4
+
+5 == "5"   //output = true
+5 === "5" //output = false
+0 == false //output = true
+0 === false  //output = false
+null == undefined //output = true
+null === undefined // //output = false
+"10" > 5 //output = true
+"2" > "10" //output = false
+true == 1 //output = true
+true === 1 //output = false
+
+//section 5
+
+// true && false   //output = false
+// true || false    //output = true
+// false || false    //output = false
+// !true              //output = false
+// !(5 > 2)            //output = false
+// 5 > 3 && 10 > 5      //output = true
+// 5 > 3 && 10 < 5       //output = false
+// 5 < 3 || 10 < 5        //output = false
+// 5 < 3 || 10 > 5        //output = true
+// (5 > 2 && 3 > 1) || (10 < 2)   //output = true )
+
+
+//section 6
+
+//1. If age >= 18 print "Adult" else "Minor"
+
+let age = 10
+
+age >= 18 ? console.log("adult") : console.log("minor");
+ 
+//output = minor
+
+//2. If marks >= 50 print "Pass" else "Fail"
+
+let marks = 70
+
+marks >= 50 ? console.log("pass") : console.log("fail");
+
+//output - pass
+
+//3. If number % 2 == 0 print "Even" else "Odd"
+
+let number =5
+number % 2 == 0 ? console.log("even") : console.log("odd");
+
+//output = odd
+
+//4. Nested ternary for grades
+
+let marks1= 70;
+
+let grade =
+marks1 >= 90 ? "A" :
+marks1 >= 75 ? "B" :
+marks1 >= 50 ? "C" :
+"Fail";
+
+console.log(" you got "  + grade + " grade");
+
+// output = you got c grade
+
+//5. Check number positive or negative using ternary
+
+
+let numb = 0
+
+let number1 = numb > 1 ? "positive":
+numb < 1 ? "negative":
+"zero";
+
+console.log(number1);
+
+//output = negative
+
+//SECTION 7 – String & Concatenation
+
+//Join "Hello" and "World"
+
+let hel = "hello";
+let wor = " world";
+
+console.log(hel + wor ); //helloworld
+
+//2. Print full name using +
+
+let name5 = "manikandan"
+let sec = "jothi"
+
+console.log("my full name is", name5 + sec );
+
+// 3 Print full name using template string
+
+let name6 = "manikandan"
+let sec2 = "jothi"
+console.log(`${ name6 }${ sec2 }`);
+
+
+//4. "10" + 5
+//5. 5 + "10"
+
+console.log("10" + 5); // "105"
+console.log(5 + "10"); // "510"
+
+//SECTION 8 – Implicit Type Conversion (66–70)
+
+"5" + 2 
+ console.log(typeof("5" + 2)); //string
+
+"5" - 2 
+console.log(typeof("5" - 2)); //number
+
+"5" * 2
+console.log(typeof("5" * 2)); //number
+
+true + 1
+console.log(typeof(true + 1)); // number
+
+false + "1"
+console.log(typeof(false + "1")); //string
+
+
+//SECTION 9 – Explicit Conversion (71–75)
+
+Number("123")
+console.log(typeof(Number("123"))); //number
+
+Number("abc")
+console.log(typeof(Number("abc"))); //number
+
+Number(true)
+console.log(typeof(Number(true))); //number
+
+Boolean("")
+console.log(typeof(Boolean(""))); // boolean
+
+Boolean("hello")
+console.log(typeof(Boolean("hello"))); // boolean
+
+
+
+// 1. Explain difference between == and ===
+
+//==(loosy type equal) only looking for a same values or value is equal but ===(strictly type equal) will also check the data types and values are equal.
+
+
+// 2. Explain difference between a++ and ++a
+// a++ is a post increment type 
+// value used first,then increased
+
+//and ++a is a pre increment type
+//value increased first,then used
+
+
+// 3. List all falsy values
+
+     // false
+            // 0
+            // "" empty string
+            // NaN
+                     // undefined
+            // null
+
+// 4. Explain why "5" - 2 works but "5" + 2 behaves differently
+
+//  "5" - 2 works because it act as a number and the result came but "5" + 2 will act like a concatination method because of 1 string.
+
+// 5. Explain why null == undefined is true
+
+// because loose equality == treats them as equal
+
+console.clear()
+
+if (1){
+    console.log("mani")
+}else{
+    console.log("aji")
+}
